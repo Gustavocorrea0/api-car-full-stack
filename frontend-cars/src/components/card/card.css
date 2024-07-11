@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    background-color: #303030;
+    color: #FFFFFF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    border: 80px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0;
+}
+
+.card img {
+    border: 8px 8px 0 0;
+    width: 290px;
+    height: 180px;
+}
+
+.container .btn-remove {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 5%;
+    width: 70%;
+    color: #FFFFFF;
+    background-color: rgb(255, 109, 109);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}

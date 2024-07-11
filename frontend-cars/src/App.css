@@ -1,0 +1,45 @@
+/*Apresentacao em Tela*/
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 97vw;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*1fr = cada elemento lateralmente*/
+  gap: 15px;
+}
+
+.container button {
+  background-color: #0275d8;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  color: #FFFFFF;
+  font-weight: bold;
+  position: fixed;
+  bottom: 34px;
+  right: 20px;
+  transition: all 0.1s linear 0.1s;
+  border-radius: 5px;
+  border: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+}
+
+/*EFEITO*/
+.container button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2);
+  transform: scale(1.1);
+}
+
+.endScreean {
+  height: 45px;
+  width: 100%;
+  margin-top: 10px;
+}
