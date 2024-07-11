@@ -17,7 +17,7 @@
 
 ### 📷 Project images
 
-<img src="./img1.gif" alt="Alt text" width="200"/><br>
+<img src="./img1.gif" alt="Alt text" width="720"/><br>
 
 [IntelliJ IDEA]: <https://www.jetbrains.com/idea/>
 [VS Code]: <https://code.visualstudio.com/>
