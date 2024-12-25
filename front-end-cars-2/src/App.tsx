@@ -27,10 +27,11 @@ function App() {
   return (
     <div className='container'>
       <h1 className="fw-bolder fs-1 text-center" style={{marginTop: '5%'}}>API CARS</h1>
-
+      {isModalOpen && <CreateModal closeModal={handleOpenModal} />}
+      <button type="button" className="btn btn-outline-dark" onClick={handleOpenModal} style={{ marginTop: '2%', marginLeft: '84%', width: '15%' }}>Novo</button>
       <div className="container text-center">
         <div className="row">
-          <div className="col" style={{ display: "grid", gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '1%'}}>
+          <div className="col" style={{ display: "grid", gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '1%', marginTop: '2%'}}>
             {data?.map(carData =>
               <Card
                 key={carData.idCar}
@@ -47,10 +48,6 @@ function App() {
           </div>
         </div>
       </div>
-
-      {isModalOpen && <CreateModal closeModal={handleOpenModal} />}
-      <button onClick={handleOpenModal}>Novo</button>
-      <div className='endScreean'></div>
     </div>
   )
 }

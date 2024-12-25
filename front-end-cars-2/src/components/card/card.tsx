@@ -14,8 +14,8 @@ interface CardProps {
 
 export function Card({ idCar, nameCar, brandCar, yearCar, powerCar, imgCar, valueCar, onRemove }: CardProps) {
     return (
-        <div className="col-20 col-sm-20 col-lg-16" style={{ width: '100%', marginTop: '20%'}}>
-            <div className="card h-150">
+        <div className="col-20 col-sm-20 col-lg-16" style={{ width: '100%', marginTop: '10'}}>
+            <div className="card h-150" style={{ backgroundColor: '#FFFFFF', color:'#000000'}}>
                 <img
                     src={imgCar}
                     className="card-img-top"
@@ -30,9 +30,9 @@ export function Card({ idCar, nameCar, brandCar, yearCar, powerCar, imgCar, valu
                     <h5 className="card-title">{nameCar}</h5>
                     <p className="card-text">Marca: {brandCar}</p>
                     <p className="card-text">Ano: {yearCar}</p>
-                    <p className="card-text">Potência: {powerCar}</p>
+                    <p className="card-text">Potência: {powerCar}HP</p>
                     <p className="card-text">Valor: {valueCar}</p>
-                    <button type="button" className="btn btn-danger" style={{ width: '100%' }}>Remover</button>
+                    <button type="button" className="btn btn-outline-danger" style={{ width: '100%' }}>Remover</button>
                 </div>
             </div>
         </div>

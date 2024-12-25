@@ -31,7 +31,6 @@ public class CarController {
         return ResponseEntity.status(HttpStatus.CREATED).body(carRepository.save(carModel));
     }
 
-
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping("/search-cars")
     public ResponseEntity<List<CarModel>> getAllCars(){
